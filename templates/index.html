@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="{{url_for('static'  , filename='style.css')}}">
+
+</head>
+<body>
+
+<div class="container">
+    <form action="{{url_for('add')}}" method="post">
+    <h2>قائمة المهام</h2>
+    <input type="text" id="taskInput" placeholder="اكتب مهمة..." name="note">
+    <button onclick="addTask()" type="submit">إضافة</button>
+
+    </form>
+    <ul id="taskList">
+        {%for note in notes%}
+        <li>{{note.note}} </li>
+        <a href="{{ url_for('delete', id=note.id) }}">حذف</a>
+        {%endfor%}
+        <h1>{{empty}} </h1>
+    </ul>
+</div>
+
+
+</body>
+</html>
