@@ -46,7 +46,7 @@ notebook/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/notebook.git
+git clone https://github.com/mhmd1912003-cmyk/notebook.git
 cd notebook
 ```
 
@@ -66,7 +66,7 @@ pip install flask sqlalchemy pymysql
 ### 4. Configure Database
 
 * تأكد إن MySQL شغال عندك
-* أنشئ Database جديدة (مثلاً: notebook_db)
+* أنشئ Database جديدة (notebook_db)
 
 ### 5. Run the app
 
@@ -82,13 +82,6 @@ python app.py
 * SQLAlchemy manages database operations
 * MySQL stores notes data
 * Jinja renders dynamic HTML pages
-
----
-
-## 📸 Screenshots
-
-(ضيف صور للمشروع هنا لو حابب)
-
 ---
 
 ## 📌 Future Improvements
@@ -102,7 +95,7 @@ python app.py
 
 ## 👨‍💻 Author
 
-Your Name
+hamdy
 
 ---
 
